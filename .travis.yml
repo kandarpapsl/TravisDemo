@@ -4,12 +4,19 @@ git:
   clone: false
 
 before_install: 
+  - echo "In Before Install"
   - git clone http://github.com/${TRAVIS_REPO_SLUG} ${HOME}/TravisDemo
+  - pwd
+  - cd ${HOME}/TravisDemo
+  - pwd
+  -ls -l
 
 script:
+  - echo "In Script"
   - env
 
 install:
+  - echo "In Install"
   - env
   - ls -l
 
