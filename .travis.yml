@@ -2,6 +2,9 @@ os: linux
 arch : PPC64LE
 git:
   clone: false
+addons:
+  apt:
+    tree
 
 before_install: 
   - echo "Before Install"
