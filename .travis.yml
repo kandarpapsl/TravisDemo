@@ -1,5 +1,5 @@
 os: linux
-arch : x86_64
+arch : PPC64LE
 
 script:
 -  env
