@@ -1,7 +1,8 @@
 os: linux
 arch : PPC64LE
 
+before_install: 
+  - export TRAVIS_REPO_SLUG=TravisDemo
+
 script:
--  env
-- export TRAVIS_REPO_SLUG=TravisDemo
-- env
+  - env
