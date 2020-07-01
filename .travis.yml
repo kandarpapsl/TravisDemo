@@ -5,6 +5,7 @@ git:
 
 before_install: 
   - echo "In Before Install"
+  - echo "-----------------------"
   - git clone http://github.com/${TRAVIS_REPO_SLUG} ${HOME}/TravisDemo
   - pwd
   - cd ${HOME}/TravisDemo
@@ -13,10 +14,12 @@ before_install:
 
 script:
   - echo "In Script"
+  - echo "-----------------------"
   - env
 
 install:
   - echo "In Install"
+  - echo "-----------------------"
   - env
   - ls -l
 
