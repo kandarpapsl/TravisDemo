@@ -1,8 +1,15 @@
 os: linux
 arch : PPC64LE
+git:
+  clone: false
 
 before_install: 
-  - export TRAVIS_REPO_SLUG=TravisDemo
+  - git clone http://github.com/TRAVIS_REPO_SLUG $HOME/TravisDemo
 
 script:
   - env
+
+install:
+  - env
+  - ls -l
+
