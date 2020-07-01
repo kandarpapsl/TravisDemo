@@ -3,3 +3,5 @@ arch : x86_64
 
 script:
 -  env
+- export TRAVIS_REPO_SLUG=TravisDemo
+- env
